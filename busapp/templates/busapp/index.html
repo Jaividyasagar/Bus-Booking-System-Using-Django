@@ -1,0 +1,14 @@
+{% extends 'busapp/base.html' %}
+
+{% block content %}
+<style media="screen">
+</style>
+<h1>Ticket Booking Website</h1>
+<form action="" method="post">
+  {{ form.as_p }}<br>
+
+  {% csrf_token %}
+  <input type="submit" name="" value="View Price">
+</form>
+
+{% endblock %}

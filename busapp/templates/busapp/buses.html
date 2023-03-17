@@ -1,0 +1,39 @@
+{% extends 'busapp/base.html' %}
+
+{% block content %}
+
+
+<h1><mark>&nbspBus Timings and Details&nbsp</mark></h1>
+<br><br>
+<table class="table table-striped table-hover">
+  <tr>
+    <th>Bus Number</th>
+    <th>Deparature Time</th>
+    <th>Destinations</th>
+    <th>Seats Available</th>
+    <th>Costs</th>
+  </tr>
+  {% for bus in buses %}
+  <tr>
+    <td>{{ bus.bus_no }}</td>
+    <td>{{ bus.departure_time }}</td>
+    <td>{{ bus.destinations }}</td>
+    <td>{{ bus.seats_available }}</td>
+    <td>{{ bus.ticket_costs }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br><br><br>
+<a href="{% url 'form' %}">Book a ticket</a>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

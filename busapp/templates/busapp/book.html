@@ -1,0 +1,13 @@
+{% extends 'busapp/base.html' %}
+{% block content %}
+<h1>Book Bus</h1>
+<form class="" action="" method="post">
+  Bus Number:<input type="number" name="" value="{{ book.bus_no }}"><br><br>
+  Destinations:<input type="text" name="" value="{{ book.destinations }}"><br><br>
+  No of Persons:<input type="=number" name="" value="">
+  {% csrf_token %}
+<br><br>
+  <input type="submit" name="" value="View amount">
+
+</form>
+{% endblock %}

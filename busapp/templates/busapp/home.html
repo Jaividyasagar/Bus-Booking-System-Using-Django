@@ -1,0 +1,12 @@
+{% extends 'busapp/base.html' %}
+
+{% block content %}
+
+<h1><mark><marquee> Welcome to Trichy Buses ticket Booking Website</marquee></mark></h1>
+<br><br>
+<a href="{% url 'businfo' %}">Click here to view bus timings and details</a>
+<br><br><br>
+<a href="{% url 'form' %}">to book a ticket</a>
+
+
+{% endblock %}

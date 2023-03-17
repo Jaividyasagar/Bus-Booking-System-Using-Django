@@ -1,0 +1,15 @@
+{% extends 'busapp/base.html' %}
+
+{% block content %}
+<h1>Ticket Booking Form</h1>
+<form action="{% url 'pricing' %}" method="post">
+  <table>
+    {{ form.as_table }}
+  </table>
+
+<br>
+  {% csrf_token %}
+  <input type="submit" name="" value="Show Price">
+</form>
+
+{% endblock %}
